@@ -69,6 +69,7 @@ public class Question1 {
 		// 10引く100をして出力
 		System.out.println( byteNum - shortNum);
 		
+		
 		/*
 		 * [概要]nameというString型の変数を宣言し、”山田太郎”と代入し、変数を使用してコンソールにこんにちは、山田太郎さん！と表示する
 		 */
