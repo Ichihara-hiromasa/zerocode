@@ -46,6 +46,7 @@ public class Question2 {
 		System.out.println(y);
 		} else {
 		System.out.println(z);
+		}
 		
 		/*
 		 * [概要]int型の変数numを用意し、コンソール入力でいずれかの値を入力し、値に合わせて判定を表示する処理
@@ -66,17 +67,15 @@ public class Question2 {
 		 * [概要]int型の変数valueを用意し、コンソール入力でいずれかの値を代入し、偶数、奇数を判定する処理
 		 */
 		
-		Scanner scanner2 = new Scanner(System.in);
-				System.out.print( "value:");
-				int value = scanner.nextInt();
-				String result2 = ( value % 2 == 1) ? "奇数です" : "偶数です";
-				System.out.println( result2);
-				
+		System.out.print( "value:");
+		int value = scanner.nextInt();
+		String result2 = ( value % 2 == 1) ? "奇数です" : "偶数です";
+		System.out.println( result2);
+		
 		/*
 		 * [概要]int型の変数scoreにコンソール入力で0から100のいずれかの数値を代入し、判定を表示する処理
 		 */
 		
-		Scanner scanner3 = new Scanner(System.in);
 		System.out.print( "score:");
 		int score2 = scanner.nextInt();
 		if ( score2 >= 90) {
@@ -93,15 +92,20 @@ public class Question2 {
 		 * [概要]コンソール入力がnullまたは空文字（””）の時に「入力が無効です」と表示する処理
 		 */
 		
-		String str = null;
-		
+		System.out.print("入力:");
+		String input = scanner.nextLine();
+		if (input == null || input.isEmpty()) {
+		    System.out.println("入力は無効です");
+		} else {
+		    System.out.println("入力は有効です");
+		}
+
 		
 		
 		/*
 		 * [概要]int型の変数dayを用意し、コンソール入力の値に応じて曜日を表示する処理
 		 */
 		
-		Scanner scannerQ9 = new Scanner(System.in);
 		System.out.print("曜日:");
 		int day = scanner.nextInt();
 		switch (day) {
@@ -134,7 +138,6 @@ public class Question2 {
 		 * [概要]int型の変数monthを用意し、コンソール入力の値に応じて季節を表示する処理
 		 */
 		
-		Scanner scanner10 = new Scanner (System .in);
 		System.out.print("月:");
 		int month = scanner.nextInt();
 		switch (month) {
@@ -153,10 +156,11 @@ public class Question2 {
 		default:
 			System.out.println("無効な月です");
 		}
+		
+		scanner.close();
+		
 		// TODO 自動生成されたメソッド・スタブ
 
-	}
-	
 	}
 	
 }

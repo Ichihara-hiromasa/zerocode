@@ -44,9 +44,11 @@ public class Question3 {
 		 * Q5[概要]for文を使って三角形を出力する処理
 		 */
 		
-		String [] strs = {"*", "**", "***", "****", "*****"};
-		for (String str : strs) {
-			System.out.println(str);
+		for (int i = 1; i <= 5; i++) {
+			for (int j = 1; j <= i; j++) {
+				System.out.print("*");
+	    	}
+			System.out.println();
 		}
 		
 		/*

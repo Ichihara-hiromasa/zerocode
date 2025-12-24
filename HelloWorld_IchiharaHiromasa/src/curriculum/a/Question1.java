@@ -9,23 +9,23 @@ public class Question1 {
 		 */
 		
 		// 変数byteNumの初期値を設定
-		byte byteNum;	
+		byte byteNum = 0;	
 		// 変数shortNumの初期値を設定
-		short shortNum;
+		short shortNum = 0;
 		// 変数intNumの初期値を設定
-		int intNum;
+		int intNum = 0;
 		// 変数longNumの初期値を設定
-		long longNum;
+		long longNum = 0L;
 		// 変数floatNumの初期値を設定
-		float floatNum;
+		float floatNum = 0.0f;
 		// 変数doubleNumの初期値を設定
-		double doubleNum;
+		double doubleNum = 0.0;
 		// 変数letterの初期値を設定
-		char letter;
+		char letter = '\u0000';
 		// 変数lettersの初期値を設定
-		String letters;
+		String letters = null;
 		// 変数isBooleanの初期値を設定
-		boolean isBoolean;
+		boolean isBoolean = false;
 		
 		/*
 		 * [概要]上記で宣言した各型の変数に指定された値を代入
@@ -65,7 +65,7 @@ public class Question1 {
 		// 小数点以外の数字を全てかけて出力
 		System.out.println( byteNum * shortNum * intNum * longNum);
 		// 10.5割る100をして出力
-		System.out.println( doubleNum / byteNum);
+		System.out.println( doubleNum / shortNum);
 		// 10引く100をして出力
 		System.out.println( byteNum - shortNum);
 		
@@ -74,7 +74,7 @@ public class Question1 {
 		 */
 		
 		String name = "山田太郎";
-				System.out.println( "こんにちは、" + name + "さん！");
+		System.out.println( "こんにちは、" + name + "さん！");
 		
 		/*
 		 * [概要]ageというint型の変数を宣言し、25を代入し、変数を使用してコンソールに年齢：25歳と表示する
@@ -146,7 +146,8 @@ public class Question1 {
 		 * [概要]String text ="私はJavaが好きです。Javaは楽しい！";という文章の中にある「Java」を「Python」に置き換えて表示する
 		 */
 		
-		String text = "私はPythonが好きです。Pythonは楽しい！";
+		String text = "私はJavaが好きです。Javaは楽しい！";
+		String newText = text.replace("Java", "Python");
 		System.out.println( text);
 		
 	}
