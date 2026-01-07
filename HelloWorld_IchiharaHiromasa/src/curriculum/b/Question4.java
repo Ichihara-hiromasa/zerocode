@@ -41,18 +41,19 @@ public class Question4 {
 		
 		int[] numbers4 = {12, 7, 9, 21, 5, 18};
 		
-		int Max = numbers4[0];
-		int Min = numbers4[0];
+		int max = numbers4[0];
+		int min = numbers4[0];
 		
 		for (int num4 = 1; num4 < numbers4.length; num4++) {
-			if (Max < numbers4[num4]) {
-				Max = numbers4[num4];
-			} else if (Min > numbers4[num4]) {
-				Min = numbers4[num4];
+			if (max < numbers4[num4]) {
+				max = numbers4[num4];
+			} 
+			if (min > numbers4[num4]) {
+				min = numbers4[num4];
 			}
 		}
-		System.out.println("最大値:" + Max);
-		System.out.println("最小値:" + Min);
+		System.out.println("最大値:" + max);
+		System.out.println("最小値:" + min);
 		
 		/*
 		 * Q5[概要]int型の整列{1,2,3,4,5}を用意し、配列の全ての要素を2倍し、結果を拡張for文を使用して表示する処理
