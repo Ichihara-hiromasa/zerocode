@@ -1,5 +1,5 @@
 package curriculum.j;
 
 public interface Billable{
-	int costForDay(int hoursWorked);
+	int calculateDailyWage(int hoursWorked);
 }

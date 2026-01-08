@@ -148,7 +148,7 @@ public class Question1 {
 		
 		String text = "私はJavaが好きです。Javaは楽しい！";
 		String newText = text.replace("Java", "Python");
-		System.out.println( text);
+		System.out.println(newText);
 		
 	}
 
